@@ -1,25 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- * main-welcome to c world
- * Return:software engineering
- **/
+ * main- welcome to c world
+ * Return: zero
+ */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
-	n = rand() - RAND_MAX / 
-	if (n> 0)
+	n = rand() - RAND_MAX / 2;
 	{
-		printf(%d is positive\n", n);
+		if (n > 0)
+			printf("%d is positive\n", n);
+		else if (n == 0)
+			printf("%d is zero\n", n);
+		else if (n < 0)
+			printf("%d is negative\n", n);
 	}
-	else if (n == 0)
-	{
-		printf(%d is zero\n", n);
-	}
-	else if (n < 0)
-		printf(%d is negative\n", n);
-		return (0);
+	return (0);
 }
