@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 /**
- * main- Entry point
- * Return: Zero
+ * print_alphabet - Make the alphabet
+ *
+ * Return: void
  */
-void lowercaseAlphabets(void)
+void print_alphabet(void)
 {
-	for (int c = 97; c <= 122; c++)
-		printf("%c ", c);
-	printf("\n");
-	return (0);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
 }
