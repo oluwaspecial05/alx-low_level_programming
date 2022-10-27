@@ -6,7 +6,7 @@
  * rot13 - ...
  *  @s: ...
  *
- *  Return: Zero
+ *  Return: ...
  */
 char *rot13(char *s)
 {
@@ -29,5 +29,5 @@ char *rot13(char *s)
 		a++;
 	}
 
-	return (0);
+	return (s);
 }
